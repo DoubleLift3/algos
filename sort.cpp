@@ -70,7 +70,9 @@ int main()
 	for(int i=0; i<inputs.size(); i++){
 	cout << inputs[i] << "";
 }
-
+	 if((k%20000 == 0) && (k>0)){
+		 cout << "number of passes=" << k;
+	 }
     return 0;
 	
 }
