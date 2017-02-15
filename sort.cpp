@@ -66,10 +66,14 @@ int main()
     }
 
    cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
+	selectionSort(inputs);
+	for(int i=0; i<inputs.size(); i++){
+	cout << inputs[i] << "";
+}
 
     return 0;
+	
 }
-/*
   int linearSearch(auto Data, auto key){
 	  for (int i=0; i<Data.size(); i++){
 		  if (Data[i]==key){
@@ -78,10 +82,11 @@ int main()
 		  }
 		  return -1;
 	  }
-*/
+
 
 	void selectionSort (auto& Data){
-	int j, k, minIndex, tmp;
+	int j, k, minIndex;
+	string tmp;
 	for (j = 0; j<Data.size()-1; j++){
 	minIndex= j;
 	for (k = j+1; k<Data.size(); k++){
@@ -94,7 +99,6 @@ int main()
 	Data [minIndex] = tmp;
 	} 
 }
-cout<<Data.size();
 }
 
 			  
